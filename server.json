@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/propublica-nonprofit",
   "title": "Propublica Nonprofit",
   "description": "ProPublica Nonprofit MCP — ProPublica Nonprofit Explorer API (free, no auth)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/propublica-nonprofit",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-propublica-nonprofit",

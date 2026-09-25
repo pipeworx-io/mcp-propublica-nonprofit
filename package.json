@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-propublica-nonprofit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ProPublica Nonprofit MCP — ProPublica Nonprofit Explorer API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-propublica-nonprofit": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "propublica-nonprofit"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-propublica-nonprofit"
+    "url": "git+https://github.com/pipeworx-io/mcp-propublica-nonprofit.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-bcedd6f256e581ef8ea75cdd22e6274b3bc680741fb3a3ffe6882542510538b2",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
   }
 }
