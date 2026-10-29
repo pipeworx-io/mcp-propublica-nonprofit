@@ -1,0 +1,59 @@
+[
+  {
+    "name": "search_nonprofits",
+    "description": "Search US nonprofits by name. Returns EIN, name, city, state, revenue, assets, and NTEE code. Example: search_nonprofits(\"red cross\", \"NY\"). Use get_organization with the EIN for full details.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Name or keyword to search for (e.g., \"habitat for humanity\")"
+        },
+        "state": {
+          "type": "string",
+          "description": "Two-letter state code to filter results (e.g., \"CA\", \"NY\")"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_organization",
+    "description": "Get full nonprofit details by EIN (Employer Identification Number). Returns organization info plus recent IRS filings with revenue, expenses, and assets. Example: get_organization(131710957).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ein": {
+          "type": "number",
+          "description": "Employer Identification Number (e.g., 131710957 for American Red Cross)"
+        }
+      },
+      "required": [
+        "ein"
+      ]
+    }
+  },
+  {
+    "name": "get_filing",
+    "description": "Get a specific IRS filing for a nonprofit. Returns financial data from one tax period including revenue, expenses, assets, and liabilities. Example: get_filing(131710957, 202112).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ein": {
+          "type": "number",
+          "description": "Employer Identification Number"
+        },
+        "tax_period": {
+          "type": "number",
+          "description": "Tax period in YYYYMM format (e.g., 202112 for December 2021)"
+        }
+      },
+      "required": [
+        "ein",
+        "tax_period"
+      ]
+    }
+  }
+]
