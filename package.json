@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-propublica-nonprofit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ProPublica Nonprofit MCP — ProPublica Nonprofit Explorer API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "propublica-nonprofit",
     "gatewaySlug": "propublica-nonprofit",
-    "sourceHash": "v1-bdbefcff0c6026366de578363ee45ab93470ed2ca3c9d3a491c28c3fc6486db5",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-227e8a9ea85d360d54dc7d17b00871b3ff975e271305c3f4962a830f00381327",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
